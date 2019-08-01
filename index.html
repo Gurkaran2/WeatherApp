@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <title>Weather App</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/cold.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-sm-10 mx-auto">
+            <div class="site-heading">
+              <h1>Your Weather App</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div >
+        <div class="col-lg-4 col-md-10 mx-auto">
+          <span>
+		     <input type="text" id="city" placeholder="Enter the city" class="d-inline">
+			 <button type="button" id="find" class="d-inline">Search</button>
+          </span>          
+        </div>
+		 <div id="details" style="padding-left:100px,margin:auto">   
+		     
+		 </div>
+		 <table id="myTable" class="table">
+  <tr >
+    <td id="day1"></td>
+	    <td id="day2"></td>
+		<td id="day3"></td>
+		<td id="day4"></td>
+		 <td id="day5"></td>
+  </tr>
+ 
+</table>
+       <div>
+		     <canvas id="tempday1" class="chart"></canvas>
+		     <canvas id="tempallday"  class="huge"></canvas>
+		     <canvas id="barallday"  class="huge"></canvas>
+			
+      </div>
+    </div>
+     </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="copyright text-muted">Copyright &copy; Your Weather App 2018</p>
+          </div>
+        </div>
+      </div>
+	  
+    </footer>
+		      <script src="js/weather1.js"></script>
+  </body>
+    
+</html>
